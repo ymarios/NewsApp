@@ -13,22 +13,22 @@ interface NewsInterface
     fun getNews(): Call<ResponseNews>
 
     @Headers("x-api-key:b417974aecb74c838e14e90c5c296409")
-    @GET("https://newsapi.org/v2/everything?q=health&from=2022-07-03&searchIn&sortBy=relevancy&apiKey=b417974aecb74c838e14e90c5c296409")
+    @GET("https://newsapi.org/v2/top-headlines?category=health&country=id&apiKey=b417974aecb74c838e14e90c5c296409")
     fun getHealth(): Call<ResponseNews>
 
     @Headers("x-api-key:b417974aecb74c838e14e90c5c296409")
-    @GET("https://newsapi.org/v2/everything?q=entertainment&from=2022-07-03&sortBy=relevancy&apiKey=b417974aecb74c838e14e90c5c296409")
+    @GET("https://newsapi.org/v2/top-headlines?category=entertainment&country=id&apiKey=b417974aecb74c838e14e90c5c296409")
     fun getEntertainment(): Call<ResponseNews>
 
     @Headers("x-api-key:b417974aecb74c838e14e90c5c296409")
-    @GET("https://newsapi.org/v2/everything?q=science&from=2022-07-03&sortBy=relevancy&apiKey=b417974aecb74c838e14e90c5c296409")
+    @GET("https://newsapi.org/v2/top-headlines?category=science&country=id&apiKey=b417974aecb74c838e14e90c5c296409")
     fun getScience(): Call<ResponseNews>
 
     @Headers("x-api-key:b417974aecb74c838e14e90c5c296409")
-    @GET("https://newsapi.org/v2/everything?q=sports&from=2022-07-03&sortBy=relevancy&apiKey=b417974aecb74c838e14e90c5c296409")
+    @GET("https://newsapi.org/v2/top-headlines?category=sports&country=id&apiKey=b417974aecb74c838e14e90c5c296409")
     fun getSports(): Call<ResponseNews>
 
     @Headers("x-api-key:b417974aecb74c838e14e90c5c296409")
-    @GET("https://newsapi.org/v2/everything?q=technology&from=2022-07-03&sortBy=relevancy&apiKey=b417974aecb74c838e14e90c5c296409")
+    @GET("https://newsapi.org/v2/top-headlines?category=technology&country=id&apiKey=b417974aecb74c838e14e90c5c296409")
     fun getTechnology(): Call<ResponseNews>
 }
